@@ -1,3 +1,24 @@
-secrets/*
-!secrets/secretvars.example.tf
+# Local .terraform directories
+**/.terraform/*
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+
+# Exclude all files in the secrets directory except the example file
+*/secrets/*
+!*/secrets/secretvars.example.tf
+
+# Ignore override files as they are usually used to override resources locally
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+*/.terraformrc
+*/terraform.rc
 
