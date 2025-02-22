@@ -72,13 +72,3 @@ resource "google_service_account_iam_member" "service_account_admin_permission" 
   member = "user:${each.value}"
 }
 
-resource "google_service_account_key" "resrc_mgr_service_account" {
-  service_account_id = google_service_account.resrc_mgr_service_account.name
-  key_algorithm      = "KEY_ALG_RSA_2048"
-  private_key_type   = "TYPE_GOOGLE_CREDENTIALS_FILE"
-}
-
-output "service_account_key" {
-  value     = google_service_account_key.resrc_mgr_service_account.private_key
-  sensitive = true
-}

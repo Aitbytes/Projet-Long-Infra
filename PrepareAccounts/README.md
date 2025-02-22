@@ -25,10 +25,3 @@ tofu init
 tofu plan --var-file ./secrets/secretvars.tf
 tofu apply --var-file ./secrets/secretvars.tf
 ```
-
-The script outputs a service account key. You can store it with the following command :
-
-```bash
-terraform output -raw service_account_key > <KEY_FILE_PATH.json>
-
-```
