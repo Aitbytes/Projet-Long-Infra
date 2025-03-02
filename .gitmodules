@@ -1,4 +1,4 @@
 [submodule "k3s-php"]
 	path = k3s-php
-	url = https://github.com/Aitbytes/Kubernetes-At-Home.git
+	url = git@github.com:Aitbytes/Kubernetes-At-Home.git
 	branch = gcp
