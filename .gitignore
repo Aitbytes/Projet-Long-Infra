@@ -1,6 +1,8 @@
 # Local .terraform directories
 **/.terraform/*
 
+Infra001
+
 # Terraform state files
 *.tfstate
 *.tfstate.*
