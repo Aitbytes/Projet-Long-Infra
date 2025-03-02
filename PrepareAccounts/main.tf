@@ -27,7 +27,12 @@ locals {
     "roles/container.admin",
     "roles/storage.admin",
     "roles/run.admin",
-    "roles/run.invoker"
+    "roles/run.invoker",
+    "roles/compute.instanceAdmin.v1",
+    "roles/artifactregistry.reader", # List container images
+    "roles/iam.serviceAccountUser",
+    "roles/logging.viewer",
+    "roles/monitoring.viewer",
   ]
 }
 
